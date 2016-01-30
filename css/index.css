@@ -1,0 +1,768 @@
+article, aside, footer, header, nav, main, section, summary, details, hgroup, figure, figcaption{
+	display: block;
+}
+@font-face {
+	font-family:"Myriad Set Pro";
+	font-style:normal;
+	font-weight:100;
+	src:local("Myriad Set Pro"), 
+	url("../fonts/myriad-set-pro_thin.woff") 
+	format("woff"); 
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. 
+	Myriad is a trademark of Adobe Systems Incorporated. */
+}
+body{
+	font-family:"Myriad Set Pro","微软雅黑";
+	margin: 0;
+	padding:0;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	list-style: none;
+}
+#ac-globalnav{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 9999;
+    display: block;
+    width: 100%;
+    height: 48px;
+    max-height: 44px;
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
+    font-size: 18px;
+}
+ #ac-globalnav .ac-gn-content {
+    margin: 0 auto;
+    max-width: 980px; 
+    padding: 0px 22px;
+    position: relative;
+    z-index: 2;
+} 
+        #ac-globalnav .ac-gn-list {
+    margin: 0px -10px;
+    width: auto;
+    height: 44px;
+    text-align: justify;
+}
+#ac-globalnav .ac-gn-item {
+    display: inline-block;
+    position: relative;
+    height: 44px;
+    z-index: 1;
+    vertical-align: top;
+}
+
+
+
+
+
+
+#ac-globalnav .ac-gn-header::after{
+    clear: both;
+    content: "";
+    width: 100%;
+    display: inline-block;
+    font-size: 0px;
+    line-height: 0;;
+}
+#ac-globalnav .ac-gn-header{
+    display: none;
+    z-index: 3;
+    width: 100%;
+    height: 48px;
+    overflow: hidden;
+    text-align: justify;
+    position: relative;
+}
+@media(max-width: 768px){
+    #ac-globalnav .ac-gn-list{
+        display: none;
+    }
+    #ac-globalnav .ac-gn-header{
+        display: block;
+    }
+}
+#ac-globalnav .ac-gn-link-apple {
+    background-repeat: no-repeat;
+    background-size: 20px 44px;
+    background-image: url("../images/image_large.svg");
+    background-position: center center;
+    width: 20px;
+}
+#ac-globalnav .ac-gn-link {
+    font-size: 16px;
+    line-height: 2.75;
+    font-weight: 400;
+    letter-spacing: normal;
+    opacity: 1;
+    color: #FFF;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0px 10px;
+    height: 44px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    outline-offset: -7px;
+}
+#ac-globalnav .ac-gn-link-text {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    height: 0px;
+    width: 0px;
+    padding: 0px;
+}
+#ac-globalnav .ac-gn-link-mac{
+    background-repeat: no-repeat;
+    background-image: url("../images/image_large3.svg");
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 1.72222em;
+    max-width: 52.7px;
+}
+#ac-globalnav .ac-gn-link-ipad {
+    background-repeat: no-repeat;
+    background-image: url("../images/image_large4.svg");
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 1.66667em;
+    max-width: 51px;
+}
+#ac-globalnav .ac-gn-link-iphone {
+    background-repeat: no-repeat;
+    background-image: url("../images/image_large5.svg");
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 2.66667em;
+    max-width: 81.6px;
+}
+#ac-globalnav .ac-gn-link-watch {
+    background-repeat: no-repeat;
+    background-image: url("../images/image_large6.svg");
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 2.44444em;
+    max-width: 74.8px;
+}
+#ac-globalnav .ac-gn-link-tv {
+    background-repeat: no-repeat;
+    background-image: url("../images/image_large7.svg");
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 1.11111em;
+    max-width: 34px;
+}
+#ac-globalnav .ac-gn-link-music {
+    background-repeat: no-repeat;
+    background-image: url("../images/image_large8.svg");
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 2.22222em;
+    max-width: 68px;
+}
+#ac-globalnav .ac-gn-link-support {
+    background-repeat: no-repeat;
+    background-image: url("../images/image_large9.svg");
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 3.16667em;
+    max-width: 96.9px;
+}
+#ac-globalnav .ac-gn-link-search {
+    background-repeat: no-repeat;
+    background-size: 20px 44px;
+    background-image: url("../images/image_large11.svg");
+    background-position: center center;
+    width: 20px;
+}
+#ac-globalnav .ac-gn-link-bag {
+    background-repeat: no-repeat;
+    background-size: 18px 44px;
+    background-image: url("../images/image_large1.svg");
+    background-position: center center;
+    width: 18px;
+}
+
+#ac-globalnav .ac-gn-list::after {
+    clear: both;
+    content: "";
+    width: 100%;
+    display: inline-block;
+    font-size: 0px;
+    line-height: 0;
+}
+
+nav li:hover{
+	opacity: 0.65;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* article */
+.hero-slides.evergreen {
+    position: relative;
+    z-index: 2;
+    border-bottom: 2px solid #FFF;
+    height: 78%;
+    margin-top: -46px;
+    min-height: 650px;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+.hero-slides .hero-content .copy {
+    position: relative;
+    z-index: 4 !important;
+    pointer-events: none;
+}
+.hero-slides.evergreen .gallery-content-hero-ssn .copy-inner {
+    padding-top: 148px;
+}
+.page-home .gallery-content .hero-content {
+    text-align: center;
+}
+.hero-slides.evergreen .gallery-content-hero-ssn .copy-inner .hero-headline {
+    font-size: 64px;
+    line-height: 1.0556;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.hero-slides.evergreen .gallery-content-hero-ssn .copy-inner .intro {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 200;
+}
+.hero-slides .copy .copy-inner h2 {
+    margin-bottom: 0.25em;
+}
+.page-home .gallery-content .links {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 200;
+}
+.page-home .gallery-content .links {
+    margin: 0.75em 0px 0px;
+    list-style: outside none none;
+    font-size: 24px;
+    line-height: 1.3333;
+    font-weight: 200;
+    color: #08C;
+}
+a {
+    text-decoration: none;
+    color: #08C;
+}
+.hero-slides.evergreen .gallery-content-hero-ssn .hero-content .copy, .hero-slides.evergreen .gallery-content-hero-ssn .hero-content .hero-wrapper {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.hero-slides.evergreen .gallery-content-hero-ssn .hero-image {
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/home_hero_ssn_large.png");
+    background-size: 1433px 610px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.hero-slides .hero-content .hero-image {
+    position: absolute;
+    z-index: 1 !important;
+    pointer-events: none;
+}
+.js .page-home .paddlenav, .js .page-home .dotnav {
+    display: block;
+}
+.dotnav{
+	display: block;
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    right: 0px;
+    background: transparent none repeat scroll 0% 0%;
+    height: 40px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 30px;
+    background: #fff;
+}
+.dotnav ul{
+    display: inline-block;
+
+}
+.dotnav li {
+    list-style: outside none none;
+    margin: 0px 10px;
+    width: 8px;
+    height: 8px;
+    float: left;
+    position: relative;
+}
+.dotnav .dotnav-item.active, .dotnav .dotnav-item.current {
+    top: -1px;
+    left: -1px;
+    width: 8px;
+    height: 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #08C;
+    background-color: transparent;
+    cursor: default;
+}
+.dotnav .dotnav-item {
+    top: 0px;
+    left: 0px;
+    width: 8px;
+    height: 8px;
+    outline: medium none;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #999;
+    font: 0px/0 a;
+    color: transparent;
+}
+
+
+
+
+
+/* aside */
+.promos {
+    max-width: 2560px;
+    margin: 0px auto;
+}
+.promos ul {
+    margin: 0px;
+    position: relative;
+    z-index: 1;
+}
+.promos ul:before, .promos ul:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+.promos .promo-tile-1, .promos .promo-tile-2, .promos .promo-tile-3, .promos .promo-tile-4 {
+    border-bottom: 2px solid #FFF;
+}
+.promos li{
+    list-style: outside none none;
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: 25%;
+}
+.promo-watch {
+    background: url("../images/promo_holiday_watch_large.jpg");
+    background-size: 640px 200px;
+    height: 200px;
+    width: auto;
+    background-position: center center;
+}
+.promos .promo-tile-1 .promo {
+    border-left: medium none;
+}
+.promos .promo {
+    display: block;
+    min-height: 200px;
+    font: 0px/0 a;
+    color: transparent;
+    background-position: center top;
+    background-repeat: no-repeat;
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+}
+.promo-iphone-6s {
+    background: url("../images/promo_startsomethingnew_iphone6s_large.jpg");
+    background-size: 640px 200px;
+    height: 200px;
+    width: auto;
+    background-position: center center;
+}
+.promo-ios-preview {
+    background: url("../images/promo_ios93preview_large.jpg");
+    background-size: 640px 200px;
+    height: 200px;
+    width: auto;
+    background-position: center center;
+}
+.promo-macbook {
+    background: url("../images/promo_macbook_large.jpg");
+    background-size: 640px 200px;
+    height: 200px;
+    width: auto;
+    background-position: center center;
+}
+
+@media(max-width:1068px){
+    .promos li{
+        width: 50%;
+    }
+    .promo-watch{
+    background: url("../images/promo_holiday_watch_medium.jpg");
+    }
+    .promo-iphone-6s{
+    background: url("../images/promo_startsomethingnew_iphone6s_medium.jpg");
+    }
+    .promo-ios-preview{
+    background: url("../images/promo_ios93preview_medium.jpg");
+    }
+    .promo-macbook{
+    background: url("../images/promo_macbook_medium.jpg");
+    }
+}
+@media(max-width:736px){
+    .promos li{
+        width: 100%;
+    }
+    .promo-watch{
+    background: url("../images/promo_holiday_watch_small.jpg");
+    }
+    .promo-iphone-6s{
+    background: url("../images/promo_startsomethingnew_iphone6s_small.jpg");
+    }
+    .promo-ios-preview{
+    background: url("../images/promo_ios93preview_small.jpg");
+    }
+    .promo-macbook{
+    background: url("../images/promo_macbook_small.jpg");
+    }
+}
+/* footer */
+#ac-globalfooter {
+    font-size: 12px;
+    line-height: 1.66667;
+    font-weight: 400;
+    letter-spacing: normal;
+    background-color: #F2F2F2;
+    color: #666;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    color: #666;
+}
+#ac-globalfooter .ac-gf-content{
+    margin: 0px auto;
+    padding: 0px 22px;
+    max-width: 980px;
+}
+#ac-globalfooter .ac-gf-label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0px;
+    border: 0px none;
+}
+#ac-globalfooter .ac-gf-directory{
+    font-size: 12px;
+    line-height: 1.66667;
+    font-weight: 400;
+    letter-spacing: normal;
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+}
+#ac-globalfooter .ac-gf-directory::before, #ac-globalfooter .ac-gf-directory::after {
+    content: " ";
+    display: table;
+}
+.ac-gf-directory-column {
+    width: 20%;
+}
+#ac-globalfooter .ac-gf-directory.with-5-columns .ac-gf-directory-column {
+    width: 20%;
+}
+#ac-globalfooter .ac-gf-directory-column {
+    position: relative;
+    z-index: 1;
+    min-height: 2px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+
+
+
+
+
+#ac-globalfooter .ac-gf-directory-column-section {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    min-height: 2px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    pointer-events: none;
+}
+#ac-globalfooter .ac-gf-directory-column-section-title {
+    font-size: 12px;
+    line-height: 1.66667;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #333;
+    margin: 0px;
+}
+#ac-globalfooter .ac-gf-directory-column-section-list {
+    list-style: outside none none;
+    margin-right: 20px;
+    padding: 0px;
+}
+#ac-globalfooter .ac-gf-directory-column-section-item {
+    display: block;
+    pointer-events: auto;
+}
+#ac-globalfooter .ac-gf-directory-column-section ~ .ac-gf-directory-column-section {
+    padding-top: 20px;
+}
+
+#ac-globalfooter.no-touch a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+#ac-globalfooter .ac-gf-directory::after {
+    clear: both;
+
+}
+#ac-globalfooter .ac-gf-directory::before, #ac-globalfooter .ac-gf-directory::after {
+    content: " ";
+    display: table;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ac-globalfooter .ac-gf-footer {
+    border-top: 1px solid #E3E3E3;
+    color: #999;
+    padding: 20px 0px 24px;
+}
+#ac-globalfooter .ac-gf-directory + .ac-gf-footer .ac-gf-footer-shop {
+    border-bottom: 1px solid #E3E3E3;
+}
+#ac-globalfooter .ac-gf-footer-shop {
+    max-height: 9999px;
+    margin-bottom: 6px;
+    padding-bottom: 5px;
+}
+#ac-globalfooter .ac-gf-footer-shop a {
+    color: #08C;
+}
+#ac-globalfooter a {
+    color: #666;
+    text-decoration: none;
+}
+#ac-globalfooter .nowrap {
+    white-space: nowrap;
+}
+#ac-globalfooter .ac-gf-footer-shop a {
+    color: #08C;
+}
+
+#ac-globalfooter .ac-gf-footer-locale {
+    float: right;
+    white-space: nowrap;
+}
+#ac-globalfooter .ac-gf-footer-locale-link {
+    display: inline;
+}
+#ac-globalfooter a {
+    color: #666;
+    text-decoration: none;
+}
+#ac-globalfooter .ac-gf-footer-locale-flag {
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/16.png");
+    cursor: pointer;
+    float: left;
+    margin-top: 1px;
+    padding-right: 5px;
+}
+#ac-globalfooter .ac-gf-footer-legal::before, #ac-globalfooter .ac-gf-footer-legal::after {
+    content: " ";
+    display: table;
+}
+}
+
+#ac-globalfooter .ac-gf-footer-legal-copyright {
+    max-height: 9999px;
+}
+
+#ac-globalfooter .ac-gf-footer-legal-copyright, #ac-globalfooter .ac-gf-footer-legal-links {
+    margin-right: 26px;
+    float: left;
+}
+
+#ac-globalfooter .ac-gf-footer-legal-link {
+    border-right: 1px solid #D6D6D6;
+    margin-right: 10px;
+    padding-right: 12px;
+    white-space: nowrap;
+}
+
+#ac-globalfooter .ac-gf-footer-legal::after {
+
+    clear: both;
+
+}
+@media(max-width:768px){
+    #ac-globalfooter .ac-gf-content {
+    padding: 0 16px;
+    }
+    #ac-globalfooter .ac-gf-directory.with-5-columns .ac-gf-directory-column {
+    width: 100%;
+    }
+    #ac-globalfooter .ac-gf-directory-column-section-list {
+    display: none;
+    }
+    #ac-globalfooter .ac-gf-directory-column-section ~ .ac-gf-directory-column-section {
+    padding-top: 0;
+    }
+    #ac-globalfooter .ac-gf-directory-column-section:after{
+    content: "+";
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 38px;
+    }
+    #ac-globalfooter .ac-gf-directory-column-section-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 38px;
+    }
+    #ac-globalfooter .ac-gf-directory-column-section {
+    border-bottom: 1px solid #e3e3e3;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    }
+    #ac-globalfooter .ac-gf-footer-locale {
+    float: none;
+    }
+    #ac-globalfooter .ac-gf-footer-legal-copyright, #ac-globalfooter .ac-gf-footer-legal-links {
+    margin-right: 0;
+    float: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* .test{
+ 	border :4px solid red;
+ }
+ .test .item{
+ 	width:200px;
+ 	height: 200px;
+ 	border: 1px solid yellow;
+ 	float: left;
+ 	margin: 10px; 
+ }
+ .clearfix:after{
+ 	content:"";
+ 	clear: both;
+ 	display: block;
+ }
+ nav{
+ 	background: #000;
+ 
+ }
+ nav a{
+ 	color: #fff;
+ }  
+ nav ul{
+ 	width: 100%;
+ 	height: 40px;
+ 	line-height: 40px;
+ 	min-width:768px;
+ 	max-width: 1000px; 
+ 	text-align: justify;
+ }
+ .a{
+ 	display: inline-block;
+ 	width: 100%;
+ 	height: 0;
+ 
+ }
+ nav li{
+ 	display: inline-block;
+ 	height: 40px;
+ }
+ nav ul:after{
+ 	content: "";
+ 	display: inline-block;
+ 	width: 100%;
+ 	height: 0;
+ 	font-size: 0;
+ 	line-height: 0;
+ }
+ nav .logo{
+ 	width: 20px;
+ 	height: 40px;
+ 	background: url(../images/image_large1.svg);
+ } */
