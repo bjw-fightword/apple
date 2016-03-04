@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>apple</title>
 	<link rel="stylesheet" href="./css/mycss.css">
+	<script src="./js/index.js"></script>
 </head>
 <body>
 	<input type="checkbox"id="ap-gn-menustate">
@@ -84,8 +84,8 @@
 	</nav>
 <!--nav完-->
 <!--article-->
-<article class="banner-box">
-	<section class="banner-box-in"style="display:none">
+<article class="banner-box slides">
+	<section class="banner-box-in slide">
 		<div class="banner-content">
 			<a href="#" class="ap-bn-link">
 			</a>
@@ -111,7 +111,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="banner-ipad">
+	<section class="banner-ipad slide">
 		<div class="bn-ip-content">
 			<a href="#" class="bn-ipad-content-link"></a>
 			<div class="bn-ip-copy">
@@ -135,22 +135,37 @@
 					
 				</div>
 			</duv>
+		</div></section>
+	<section class="banner-tv slide">
+		<div class="bn-tv-content">
+			<div class="tv-img-inner"></div>
+			<div class="appletv-img">	
+			</div>
+			<div class="tv-bn-word">
+				<h2 class="product-text">The future of television is here.</h2>
+			</div>
+			<div class="bn-tv-bottom">
+				<ul>
+					<li class="slide-link-a">
+						<a href="#">Learn more&nbsp;&gt;</a>
+						<a href="#">Watch the film</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</section>
-	
 	<nav class="btn-box">
 		<ul>
-			<li>
-				<a href="#" class="bn-btn"></a>
+			<li style="background:#fff" class="bn-btn">
+				
 			</li>
-			<li>
-				<a href="#" class="bn-btn"></a>
+			<li  class="bn-btn">
+				
 			</li>
-			<li>
-				<a href="#" class="bn-btn"></a>
+			<li class="bn-btn">
+				
 			</li>
-		</ul>
-	</nav>
+		</ul></nav>
 </article>
 <!--banner完-->
 <!--aside开始-->
@@ -180,12 +195,11 @@
 		</h2>
 		<nav class="ap-gf-directory">
 			<div class="ap-gf-directory-column">
-				<input type="checkbox" id="ap-gf-ft-checked">
-				<div class="ap-gf-directory-column-section">
-					<lable class="ap-gf-directory-column-section-label"for="ap-gf-ft-checked">
-						<h3 class="ap-gf-directory-column-section-title">Shop and Learn</h3>
-					</lable>
-					<ul class="ap-gf-directory-column-section-list">
+				<input type="checkbox" id="ap-gf-ft-checked" >
+				<label for="ap-gf-ft-checked">
+					<h3 class="ap-gf-directory-column-section-title">Shop and Learn</h3>
+				</label>
+				<ul class="ap-gf-directory-column-section-list">
 						<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Mac</a></li>
 						<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">TV</a></li>
 						<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">iPad</a></li>
@@ -196,15 +210,15 @@
 						<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">iPod</a></li>
 						<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Accessories</a></li>
 						<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Gift Cards</a></li>
-					</ul>
-				</div>
+				</ul>
 			</div>
 			<div class="ap-gf-directory-column">
-					<div class="ap-gf-directory-column-section">
-						<lable class="ap-gf-directory-column-section-label">
-							<h3 class="ap-gf-directory-column-section-title">Apple Store</h3>
-						</label>
-						<ul class="ap-gf-directory-column-section-list">
+				<input type="checkbox" id="ap-gf-ft-checked1" >
+				<label for="ap-gf-ft-checked1">
+					<h3 class="ap-gf-directory-column-section-title">Apple Store
+					</h3>
+				</label>
+				<ul class="ap-gf-directory-column-section-list">
 								<li class="ap-gf-directory-column-section-item">
 									<a href="#"class="ap-gf-directory-column-section-link">Find a Store</a>
 								</li>
@@ -217,68 +231,94 @@
 								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Reuse and Recycling</a></li>
 								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Order Status</a></li>
 								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Shopping Help</a></li>
-						</ul>
-					</div>
+				</ul>
 			</div>
+
+
+
 			<div class="ap-gf-directory-column">
-					<div class="ap-gf-directory-column-section">
-						<lable class="ap-gf-directory-column-section-label">
-							<h3 class="ap-gf-directory-column-section-title">For Education</h3>
-						</label>
-						<ul class="ap-gf-directory-column-section-list">
-							<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Apple and Education</a></li>
-							<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Shop for College</a></li>
-						</ul>
-					</div>
-					<div class="ap-gf-directory-column-section">
-						<lable class="ap-gf-directory-column-section-label">
-							<h3 class="ap-gf-directory-column-section-title">For Business</h3>
-						</label>
-						<ul class="ap-gf-directory-column-section-list">
-							<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">iPhone in Busines</a></li>
-							<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">iPad in Business</a></li>
-							<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Mac in Business</a></li>
-							<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Shop for Your Business</a></li>
-						</ul>
-					</div>
-			</div>
-			<div class="ap-gf-directory-column">
-					<div class="ap-gf-directory-column-section">
-						<lable class="ap-gf-directory-column-section-label">
-							<h3 class="ap-gf-directory-column-section-title">Account</h3>
-						</label>
-						<ul class="ap-gf-directory-column-section-list">
-								<li class="ap-gf-directory-column-section-item">
-									<a href="#"class="ap-gf-directory-column-section-link">Manage Your Apple ID</a>
-								</li>
-								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Apple Store Account</a></li>
-								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">iCloud.com</a></li>
-						</ul>
-					</div>
-					<div class="ap-gf-directory-column-section">
-						<lable class="ap-gf-directory-column-section-label">
-							<h3 class="ap-gf-directory-column-section-title">Apple Values</h3>
-						</label>
-						<ul class="ap-gf-directory-column-section-list">
-								<li class="ap-gf-directory-column-section-item">
-									<a href="#"class="ap-gf-directory-column-section-link">Environment</a>
-								</li>
-								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Supplier Responsibility</a></li>
-								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Accessibility</a></li>
-								<li class="ap-gf-directory-column-section-item">
-									<a href="#"class="ap-gf-directory-column-section-link">Privacy</a>
-								</li>
-								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Inclusion and Diversity</a></li>
-								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Education</a></li>
-						</ul>
-					</div>
-			</div>
-			<div class="ap-gf-directory-column">
+				<input type="checkbox" id="ap-gf-ft-checked2" >
 				<div class="ap-gf-directory-column-section">
-						<lable class="ap-gf-directory-column-section-label">
-							<h3 class="ap-gf-directory-column-section-title">Apple Store</h3>
-						</label>
-						<ul class="ap-gf-directory-column-section-list">
+					<label for="ap-gf-ft-checked2">
+						<h3 class="ap-gf-directory-column-section-title">For Education</h3>
+					</label>
+					<ul class="ap-gf-directory-column-section-list">
+								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Apple and Education</a></li>
+								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Shop for College</a></li>
+					</ul>
+				</div>
+				<input type="checkbox" id="ap-gf-ft-checked3">
+				<div class="ap-gf-directory-column-section1">
+					<label for="ap-gf-ft-checked3">
+						<h3 class="ap-gf-directory-column-section-title">For Business</h3>
+					</label>
+					<ul class="ap-gf-directory-column-section-list">
+								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">iPhone in Busines</a></li>
+								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">iPad in Business</a></li>
+								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Mac in Business</a></li>
+								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Shop for Your Business</a></li>
+					</ul>
+				</div>
+			</div>
+
+
+
+
+
+
+			<div class="ap-gf-directory-column">
+				<input type="checkbox" id="ap-gf-ft-checked4">
+				<div class="ap-gf-directory-column-section">
+					<label for="ap-gf-ft-checked4">
+						<h3 class="ap-gf-directory-column-section-title">Account</h3>
+					</label>
+					<ul class="ap-gf-directory-column-section-list">
+									<li class="ap-gf-directory-column-section-item">
+										<a href="#"class="ap-gf-directory-column-section-link">Manage Your Apple ID</a>
+									</li>
+									<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Apple Store Account</a></li>
+									<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">iCloud.com</a></li>
+					</ul>
+				</div>
+				<input type="checkbox" id="ap-gf-ft-checked5">
+				<div class="ap-gf-directory-column-section1">
+					<label for="ap-gf-ft-checked5">
+						<h3 class="ap-gf-directory-column-section-title">Apple Values</h3>
+					</label>
+					<ul class="ap-gf-directory-column-section-list">
+									<li class="ap-gf-directory-column-section-item">
+										<a href="#"class="ap-gf-directory-column-section-link">Environment</a>
+									</li>
+									<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Supplier Responsibility</a></li>
+									<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Accessibility</a></li>
+									<li class="ap-gf-directory-column-section-item">
+										<a href="#"class="ap-gf-directory-column-section-link">Privacy</a>
+									</li>
+									<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Inclusion and Diversity</a></li>
+									<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Education</a></li>
+					</ul>
+				</div>	
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="ap-gf-directory-column">
+				<input type="checkbox" id="ap-gf-ft-checked6" >
+				<label for="ap-gf-ft-checked6">
+					<h3 class="ap-gf-directory-column-section-title">Apple Store</h3>
+				</label>
+				<ul class="ap-gf-directory-column-section-list">
 								<li class="ap-gf-directory-column-section-item">
 									<a href="#"class="ap-gf-directory-column-section-link">Shopping Help</a>
 								</li>
@@ -291,8 +331,7 @@
 								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Financing</a></li>
 								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Reuse and Recycling</a></li>
 								<li class="ap-gf-directory-column-section-item"><a href="#"class="ap-gf-directory-column-section-link">Order Status</a></li>
-						</ul>
-				</div>
+				</ul>
 			</div>
 		</nav>
 		<section class="ap-gf-footer">
