@@ -369,7 +369,6 @@ nav li a:hover{
 .slides{
     height: 65%;
     min-height: 650px;
-    border: 2px solid red;
     box-sizing:border-box;
     position: relative;
     overflow: hidden;
